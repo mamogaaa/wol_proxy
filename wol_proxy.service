@@ -1,0 +1,13 @@
+[Unit]
+Description=Wake-on-LAN Proxy Service
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/wol_proxy -config /etc/wake_on_lan_proxy/config.yaml
+Restart=on-failure
+StandardOutput=journal
+StandardError=journal
+WorkingDirectory=/var/log/wol_proxy
+
+[Install]
+WantedBy=multi-user.target

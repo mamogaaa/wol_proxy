@@ -1,0 +1,6 @@
+listen_port: ":8080"
+mac_address: "AA:BB:CC:DD:EE:FF"
+server_address: "192.168.1.100:80"
+wol_port: 9
+check_interval: 10
+retry_attempts: 10
